@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">imageInput</string>
+    <string name="explore">Explore</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="comes_from_an_indomitable_will">comes from an indomitable will.</string>
+</resources>

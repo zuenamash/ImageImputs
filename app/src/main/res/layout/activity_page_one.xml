@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".pageOne">
+
+    <ImageView
+        android:id="@+id/imgOne"
+        android:layout_width="423dp"
+        android:layout_height="704dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="54dp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.478"
+        app:srcCompat="@drawable/elina" />
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="337dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#3DC644"
+        android:text="Try this at home to be fit.Loving your self is so important Hit your life goals with good health."
+        android:textColor="#9C27B0"
+        android:textColorLink="#C5B845"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgOne" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="163dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FF9800"
+        android:text="Next"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/gdVerHome"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvText" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="155dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="4dp"
+        android:backgroundTint="#FF9800"
+        android:text="Back"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnNext"
+        app:layout_constraintStart_toStartOf="@+id/gdVerHome"
+        app:layout_constraintTop_toTopOf="@+id/btnNext" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="477dp"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdVerHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="280dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="174dp"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
